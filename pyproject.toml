@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lumerical-matlab-paper-reproduction"
+version = "0.1.0"
+description = "Auditable physics-first photonics paper reproduction agent tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["PyMuPDF>=1.24,<2", "numpy>=1.24,<3", "scipy>=1.10,<2", "Pillow>=10,<13", "pint>=0.23,<1", "h5py>=3.9,<4", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+paper-repro = "paper_repro.cli:main"
+
+[tool.setuptools]
+packages = ["paper_repro"]
+include-package-data = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+paper_repro = ["assets/*.m"]

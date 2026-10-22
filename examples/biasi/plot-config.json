@@ -1,0 +1,59 @@
+{
+  "output_dir": "plots",
+  "figures": [
+    {
+      "id": "biasi_diagnostic",
+      "data": "reference-run/data.mat",
+      "panels": [
+        {
+          "columns": [
+            "out_energy"
+          ],
+          "labels": [
+            "energy"
+          ],
+          "x_factor": 1000000.0,
+          "y_factor": 1,
+          "xlabel": "t (us)",
+          "ylabel": "J"
+        },
+        {
+          "columns": [
+            "out_carrier"
+          ],
+          "labels": [
+            "carrier"
+          ],
+          "x_factor": 1000000.0,
+          "y_factor": 1,
+          "xlabel": "t (us)",
+          "ylabel": "1/m**3"
+        },
+        {
+          "columns": [
+            "out_temperature"
+          ],
+          "labels": [
+            "temperature"
+          ],
+          "x_factor": 1000000.0,
+          "y_factor": 1,
+          "xlabel": "t (us)",
+          "ylabel": "K"
+        },
+        {
+          "columns": [
+            "out_transmission"
+          ],
+          "labels": [
+            "transmission"
+          ],
+          "x_factor": 1000000.0,
+          "y_factor": 1,
+          "xlabel": "t (us)",
+          "ylabel": "1"
+        }
+      ]
+    }
+  ]
+}

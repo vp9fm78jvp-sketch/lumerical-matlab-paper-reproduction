@@ -1,0 +1,7 @@
+PyMuPDF>=1.24,<2
+numpy>=1.24,<3
+scipy>=1.10,<2
+Pillow>=10,<13
+pint>=0.23,<1
+PyYAML>=6,<7
+h5py>=3.9,<4

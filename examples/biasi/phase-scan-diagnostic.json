@@ -1,0 +1,26 @@
+{
+  "backend": "PYTHON_REFERENCE",
+  "forward_status": "COMPLETED",
+  "reverse_status": "COMPLETED",
+  "forward_initial_state": "zero",
+  "reverse_initial_state": "forward terminal state",
+  "same_parameter_endpoints": true,
+  "forward_endpoint": [
+    1.567206924712158e-07,
+    5.48704611754955e-08,
+    -2.1747670214511706e-07,
+    9.637878355173373e-08,
+    1.900515083072761e+22,
+    0.3343740977596295
+  ],
+  "reverse_endpoint": [
+    1.5672157640904803e-07,
+    5.4870325555753115e-08,
+    -2.174773149244204e-07,
+    9.637913826344618e-08,
+    1.900543761459233e+22,
+    0.3343835065928638
+  ],
+  "scientific_grade": "D",
+  "note": "Real 3-point numerical path test, not publication-resolution hysteresis validation"
+}

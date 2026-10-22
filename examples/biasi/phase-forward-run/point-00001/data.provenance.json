@@ -1,0 +1,36 @@
+{
+  "engine": "PYTHON_REFERENCE",
+  "integrator": "Radau",
+  "run_id": "b368fbc49fc84cb3b673a623bd6ad8d1",
+  "model_sha256": "01cd0d60a9ae7169873eb907ae44c19ffc2fc9e8beb099359b21bec44b50b8b9",
+  "started_at": "2026-10-22T11:22:06.165238+00:00",
+  "finished_at": "2026-10-22T11:22:07.002158+00:00",
+  "elapsed_seconds": 0.8369197770002756,
+  "nfev": 1510,
+  "units": {
+    "t": "s",
+    "out_energy": "J",
+    "out_carrier": "1/m**3",
+    "out_temperature": "K",
+    "out_transmission": "1"
+  },
+  "final_state": [
+    1.440736771840311e-07,
+    -6.764315883252544e-08,
+    -8.34628414112297e-08,
+    2.122094350762313e-07,
+    1.6047420990568146e+22,
+    0.2759381869634625
+  ],
+  "final_time": 2e-06,
+  "commercial_solver_executed": false,
+  "data_sha256": "21da041361e2099ab5dd0513dfc625cd43dfd769b5c8a15ea4b8848a87219013",
+  "columns": [
+    "t",
+    "out_energy",
+    "out_carrier",
+    "out_temperature",
+    "out_transmission"
+  ],
+  "samples": 4001
+}

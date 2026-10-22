@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-22",
+  "python_tests": {
+    "command": "python -m pytest -q",
+    "passed": 44,
+    "failed": 0,
+    "duration_seconds": 13.81
+  },
+  "commercial_software": {
+    "lumerical_installed": false,
+    "matlab_installed": false,
+    "commercial_simulations_executed": 0
+  },
+  "actual_python_run_receipts": [
+    {
+      "data": "examples/biasi/phase-forward-run/point-00000/data.mat",
+      "data_sha256": "891232d8ca9cde6df2b4ab49c1b8f4ca1464b94c43c1982457fa0e202cb8d2f7",
+      "run_id": "f62a4cb9b4964438abbd2245f2e489c1",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/phase-forward-run/point-00001/data.mat",
+      "data_sha256": "21da041361e2099ab5dd0513dfc625cd43dfd769b5c8a15ea4b8848a87219013",
+      "run_id": "b368fbc49fc84cb3b673a623bd6ad8d1",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/phase-forward-run/point-00002/data.mat",
+      "data_sha256": "63b248529f7828e4516c6e8494e26faab87e6498ac5fc0425386044daabaa2b9",
+      "run_id": "b9b09cbdb5f64bfea74061e905eaae90",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/phase-reverse-run/point-00000/data.mat",
+      "data_sha256": "4e24fd61e5ee0981210d1cee887a9444cfed6c989b237dfb43c7bf84fa2278c1",
+      "run_id": "a545fe0b6f304fdb9e1c59a758bdedec",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/phase-reverse-run/point-00001/data.mat",
+      "data_sha256": "1185340acfd66a55f2b02976946813bb27dc6a8e83620b43aace49884d7c1bfd",
+      "run_id": "66915a533f9248ffb10a5bf346eba91f",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/phase-reverse-run/point-00002/data.mat",
+      "data_sha256": "f13e940a4dcc23c0a953407e913bf61697e087e7d51ecfbe8f9a8e743b9b62dd",
+      "run_id": "7136a9207e2848e5a95255a9f002ab0e",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 4001
+    },
+    {
+      "data": "examples/biasi/reference-run/data.mat",
+      "data_sha256": "99a224a5cd662c174a9ae052467b0fb9b9cb6681c616101b46d0e65640873182",
+      "run_id": "d02023dde8dd4c95b83a60f83575d752",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 401
+    },
+    {
+      "data": "examples/xiang/identification-run/trial-0000/data.mat",
+      "data_sha256": "31b47cc1441f060a6a5ae157ed75600ec61fcf73301a110027f1c70b86dbe1e4",
+      "run_id": "fe453f94e9bb40b9ba84a422cad111d6",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/identification-run/trial-0001/data.mat",
+      "data_sha256": "345952bb41505e68164d148c6c4f3af4d18379b771be586d48b570abd3c5527c",
+      "run_id": "3d759cac583c4a02942f8470c5dcf5fa",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/identification-run/trial-0002/data.mat",
+      "data_sha256": "825e697779e8269bc26db879ea52105729390d0a64b34c20c142e283aaa33dd3",
+      "run_id": "5ea690dbe95e4cc19d5fa45ccb459aff",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/identification-run/trial-0003/data.mat",
+      "data_sha256": "4fcd918ccd05db1b1fe216ba4a89b847a51bb6de0a8e652cfc07fb80d33630a7",
+      "run_id": "156056bb17de46c6a1ea49dbc6e12c60",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/identification-run/trial-0004/data.mat",
+      "data_sha256": "cea390884b28940947868ec518c261b77470e053d71e5813e23d089381612c44",
+      "run_id": "6d476f5d41bd4b4db6edc2d9d8a45ac6",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/reference-run/data.mat",
+      "data_sha256": "a9f772ed5f6455f5f3139965ee735b286352a3b25902ddf293b4815b53d56680",
+      "run_id": "8443a6c6594947ec8599a3f2b737b95a",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    },
+    {
+      "data": "examples/xiang/sign-diagnostic/data.mat",
+      "data_sha256": "9787eaeb993a5159ffcdb128869904851557f0571bbac5a8e8c2fae58218b431",
+      "run_id": "0920a7cf8be748fb99d00f4edc480bca",
+      "engine": "PYTHON_REFERENCE",
+      "samples": 6001
+    }
+  ],
+  "xiang_inventory": {
+    "figures": 11,
+    "provisional_panel_groups": 14,
+    "visually_complete_claim": false
+  },
+  "biasi_supplement_inventory": {
+    "local_figures": 1,
+    "panels": 8,
+    "main_text_figures_separate": true
+  },
+  "forward_test_defects_fixed": [
+    "Missing case-study resource during concurrent authoring; final relative links verified",
+    "Supplement main-text references incorrectly counted as local missing figures; separate ledger and regression test added"
+  ],
+  "known_limitations": [
+    "Commercial LSF and MATLAB runtime not tested",
+    "Xiang candidate and bounded identification have not reproduced sustained self-pulsing",
+    "Historical successful Xiang candidate parameters/logs unavailable",
+    "General physics interpretation and complex figures need invoking agent review",
+    "PDE-specific models and convergence need source-specific agent implementation"
+  ]
+}

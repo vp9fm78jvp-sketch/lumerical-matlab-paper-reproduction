@@ -1,0 +1,76 @@
+# ANALYTIC REGRESSION TEMPLATE ONLY, NOT PAPER DATA. Regenerate from the paper-specific model.
+# Generated from audited paper-specific ODE IR. No fabricated output.
+# Fixed-step integration requires dt, dt/2 and independent-integrator verification.
+function pr_rhs(pr_y,pr_time,pr_p) {
+  pr_a_field=(pr_y(1)+((0+1i*(1))*pr_y(2)));
+  pr_a_coeff=(-pr_p(1));
+  pr_f=matrix(2,1);
+  pr_f(1)=real(((pr_a_coeff*pr_a_field)+pr_p(2)));
+  pr_f(2)=imag(((pr_a_coeff*pr_a_field)+pr_p(2)));
+  return pr_f;
+}
+function pr_observe(pr_y,pr_time,pr_p) {
+  pr_a_field=(pr_y(1)+((0+1i*(1))*pr_y(2)));
+  pr_a_coeff=(-pr_p(1));
+  pr_o=matrix(2,1);
+  pr_o(1)=(abs(pr_a_field)^2);
+  pr_o(2)=pr_y(1);
+  return pr_o;
+}
+function pr_coeff(pr_y,pr_time,pr_p) {
+  pr_a_field=(pr_y(1)+((0+1i*(1))*pr_y(2)));
+  pr_a_coeff=(-pr_p(1));
+  pr_l=matrix(1,2);
+  pr_l(1,1)=pr_a_coeff;
+  pr_l(1,2)=pr_p(2);
+  return pr_l;
+}
+function pr_propagate(pr_a,pr_l,pr_b,pr_h) {
+  pr_z=pr_l*pr_h;
+  if (abs(pr_z)<1e-6) { pr_phi=1+pr_z/2+pr_z^2/6+pr_z^3/24; }
+  else { pr_phi=(exp(pr_z)-1)/pr_z; }
+  return exp(pr_z)*pr_a+pr_h*pr_phi*pr_b;
+}
+pr_p=matrix(2,1);
+pr_p(1)=2;
+pr_p(2)=1;
+pr_y=matrix(2,1);
+pr_y(1)=0;
+pr_y(2)=0;
+pr_steps=150;
+pr_dt=0.02;
+pr_time=0;
+pr_stop=3;
+pr_times=matrix(pr_steps+1,1);
+pr_values=matrix(pr_steps+1,2);
+pr_states=matrix(pr_steps+1,2);
+pr_times(1)=pr_time;
+pr_values(1,:)=transpose(pr_observe(pr_y,pr_time,pr_p));
+pr_states(1,:)=transpose(pr_y);
+for(pr_step=1:pr_steps) {
+  pr_h=min([pr_dt,pr_stop-pr_time]);
+  pr_k1=pr_rhs(pr_y,pr_time,pr_p);
+  pr_mid=pr_y+pr_h/2*pr_k1;
+  pr_coeff0=pr_coeff(pr_y,pr_time,pr_p);
+  pr_a=pr_y(1)+1i*pr_y(2);
+  pr_b=pr_propagate(pr_a,pr_coeff0(1,1),pr_coeff0(1,2),pr_h/2);
+  pr_mid(1)=real(pr_b);
+  pr_mid(2)=imag(pr_b);
+  pr_coeffm=pr_coeff(pr_mid,pr_time+pr_h/2,pr_p);
+  pr_next=pr_y+pr_h*pr_rhs(pr_mid,pr_time+pr_h/2,pr_p);
+  pr_a=pr_y(1)+1i*pr_y(2);
+  pr_b=pr_propagate(pr_a,pr_coeffm(1,1),pr_coeffm(1,2),pr_h);
+  pr_next(1)=real(pr_b);
+  pr_next(2)=imag(pr_b);
+  pr_y=pr_next;
+  pr_time=pr_time+pr_h;
+  pr_times(pr_step+1)=pr_time;
+  pr_states(pr_step+1,:)=transpose(pr_y);
+  pr_values(pr_step+1,:)=transpose(pr_observe(pr_y,pr_time,pr_p));
+}
+t=pr_times;
+out_energy=pr_values(:,1);
+out_real_field=pr_values(:,2);
+matlabsave("regression.mat",t,out_energy,out_real_field);
+pr_completed=1;
+?"PAPER_REPRO_NUMERICS_FINISHED";

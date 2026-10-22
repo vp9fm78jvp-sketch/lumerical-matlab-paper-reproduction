@@ -1,0 +1,526 @@
+{
+  "id": "biasi-drum-formula-thermal-candidate",
+  "device_id": "biasi-DRUM-v1",
+  "condition_id": "phase-scan-demo-dlambda80pm",
+  "provenance": {
+    "sources": [
+      "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "https://assets-eu.researchsquare.com/files/rs-7355635/v1/45bdd9826e745f37ec546b53.pdf",
+      "https://doi.org/10.1103/fcsp-jw79"
+    ],
+    "version_warning": "Main paper checked at PRA 2026; coefficient table from preprint supplement; do not conflate versions"
+  },
+  "parameters": [
+    {
+      "name": "lightSpeed",
+      "value": 299792458.0,
+      "unit": "m/s",
+      "expected_unit": "m/s",
+      "category": "C",
+      "source": "SI physical constants",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "hbarSI",
+      "value": 1.054571817e-34,
+      "unit": "J*s",
+      "expected_unit": "J*s",
+      "category": "C",
+      "source": "SI physical constants",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "omegaR",
+      "value": 1213088304071855.5,
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "deltaLambda",
+      "value": 8e-11,
+      "unit": "m",
+      "expected_unit": "m",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "powerIn",
+      "value": 0.0211,
+      "unit": "W",
+      "expected_unit": "W",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "betaTPA",
+      "value": 8.4e-12,
+      "unit": "m/W",
+      "expected_unit": "m/W",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "dndT",
+      "value": 0.000186,
+      "unit": "1/K",
+      "expected_unit": "1/K",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "dndN",
+      "value": -3.46e-27,
+      "unit": "m**3",
+      "expected_unit": "m**3",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "sigmaFCA",
+      "value": 1.5e-21,
+      "unit": "m**2",
+      "expected_unit": "m**2",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "rhoSi",
+      "value": 2330.0,
+      "unit": "kg/m**3",
+      "expected_unit": "kg/m**3",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "heatCapacity",
+      "value": 700.0,
+      "unit": "J/kg/K",
+      "expected_unit": "J/kg/K",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "nGroup",
+      "value": 3.476,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "etaLin",
+      "value": 0.4,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "couplingRate",
+      "value": 26000000000.0,
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "tauHeat",
+      "value": 8e-08,
+      "unit": "s",
+      "expected_unit": "s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "tauCarrier",
+      "value": 1.2e-08,
+      "unit": "s",
+      "expected_unit": "s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "overlapHeat",
+      "value": 0.9355,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "overlapTPA",
+      "value": 0.9964,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "overlapFCA",
+      "value": 0.9996,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "volumeHeat",
+      "value": 4.466e-17,
+      "unit": "m**3",
+      "expected_unit": "m**3",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "volumeTPA",
+      "value": 3.626e-17,
+      "unit": "m**3",
+      "expected_unit": "m**3",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "volumeFCA",
+      "value": 3.304e-17,
+      "unit": "m**3",
+      "expected_unit": "m**3",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "beta12mag",
+      "value": 55000000000.0,
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "beta21mag",
+      "value": 65000000000.0,
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "phase12",
+      "value": 0,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "phase21",
+      "value": 0.0,
+      "unit": "1",
+      "expected_unit": "1",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "lambdaR",
+      "expression": "2*3.141592653589793*lightSpeed/omegaR",
+      "unit": "m",
+      "expected_unit": "m",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "omegaInput",
+      "expression": "2*3.141592653589793*lightSpeed/(lambdaR+deltaLambda)",
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "lossIntrinsic",
+      "value": 3162277660.168379,
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "A",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026) gamma_abs=etaLin/10^2.5 THz",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "lossLin",
+      "expression": "etaLin*lossIntrinsic",
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "lossRad",
+      "expression": "(1-etaLin)*lossIntrinsic",
+      "unit": "1/s",
+      "expected_unit": "1/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "tpaCoeff",
+      "expression": "overlapTPA*betaTPA*lightSpeed**2/(nGroup**2*volumeTPA)",
+      "unit": "1/J/s",
+      "expected_unit": "1/J/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "fcaCoeff",
+      "expression": "overlapFCA*sigmaFCA*lightSpeed/nGroup",
+      "unit": "m**3/s",
+      "expected_unit": "m**3/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "carrierCoeff",
+      "expression": "overlapFCA*betaTPA*lightSpeed**2/(2*hbarSI*omegaR*volumeFCA**2*nGroup**2)",
+      "unit": "1/m**3/J**2/s",
+      "expected_unit": "1/m**3/J**2/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "deltaOmegaHeat",
+      "expression": "-omegaR/nGroup*dndT",
+      "unit": "1/s/K",
+      "expected_unit": "1/s/K",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    },
+    {
+      "name": "deltaOmegaCarrier",
+      "expression": "-omegaR/nGroup*dndN",
+      "unit": "m**3/s",
+      "expected_unit": "m**3/s",
+      "category": "B",
+      "source": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026)",
+      "optimize": false,
+      "history": []
+    }
+  ],
+  "states": [
+    {
+      "name": "a1r",
+      "unit": "J**0.5",
+      "scale": 1e-07,
+      "initial": 0
+    },
+    {
+      "name": "a1i",
+      "unit": "J**0.5",
+      "scale": 1e-07,
+      "initial": 0
+    },
+    {
+      "name": "a2r",
+      "unit": "J**0.5",
+      "scale": 1e-07,
+      "initial": 0
+    },
+    {
+      "name": "a2i",
+      "unit": "J**0.5",
+      "scale": 1e-07,
+      "initial": 0
+    },
+    {
+      "name": "carrier",
+      "unit": "1/m**3",
+      "scale": 1e+22,
+      "initial": 0
+    },
+    {
+      "name": "temp",
+      "unit": "K",
+      "scale": 1,
+      "initial": 0
+    }
+  ],
+  "time": {
+    "start": 0,
+    "stop": 2e-06,
+    "dt": 5e-10,
+    "max_steps": 2500000
+  },
+  "integration": "rk4",
+  "product": "INTERCONNECT",
+  "review": {
+    "equations": true,
+    "normalization": true,
+    "loss_budget": true,
+    "detuning_sign": true,
+    "initial_boundary": true,
+    "parameter_sources": true,
+    "evidence": "Biasi et al. Research Square rs-7355635/v1 supplementary PDF 2025-08-12 pp.3-4 Eqs.19-22/Table 1; version differs from PRA 25,024041 (2026); version mismatch and thermal-coefficient anomaly remain open"
+  },
+  "anomalies": [
+    {
+      "id": "thermal-coefficient",
+      "source": "Supplement Table1 p4",
+      "issue": "Printed -0.065e-4 THz/K differs by about 1e4 from -omega/ng*dn/dT",
+      "resolution": "This candidate uses formula; literal variant stored separately"
+    },
+    {
+      "id": "version",
+      "issue": "Supplement is preprint v1; published-version coefficients not yet independently reconciled"
+    }
+  ],
+  "algebra": [
+    {
+      "name": "aone",
+      "expression": "a1r+1j*a1i",
+      "unit": "J**0.5"
+    },
+    {
+      "name": "atwo",
+      "expression": "a2r+1j*a2i",
+      "unit": "J**0.5"
+    },
+    {
+      "name": "energyTotal",
+      "expression": "abs2(aone)+abs2(atwo)",
+      "unit": "J"
+    },
+    {
+      "name": "betaLeft",
+      "expression": "beta12mag*(cos(phase12)+1j*sin(phase12))",
+      "unit": "1/s"
+    },
+    {
+      "name": "betaRight",
+      "expression": "beta21mag*(cos(phase21)+1j*sin(phase21))",
+      "unit": "1/s"
+    },
+    {
+      "name": "lossTotal",
+      "expression": "5*couplingRate+lossLin+lossRad+tpaCoeff*energyTotal+fcaCoeff*carrier",
+      "unit": "1/s"
+    },
+    {
+      "name": "coeff",
+      "expression": "-lossTotal/2+1j*(omegaR-omegaInput+deltaOmegaHeat*temp+deltaOmegaCarrier*carrier)",
+      "unit": "1/s"
+    },
+    {
+      "name": "driveTwo",
+      "expression": "1j*sqrt(couplingRate*powerIn)",
+      "unit": "J**0.5/s"
+    },
+    {
+      "name": "powerAbs",
+      "expression": "(lossLin+tpaCoeff*energyTotal+fcaCoeff*carrier)*energyTotal",
+      "unit": "W"
+    }
+  ],
+  "rhs": {
+    "a1r": "real(coeff*aone-betaRight*atwo)",
+    "a1i": "imag(coeff*aone-betaRight*atwo)",
+    "a2r": "real(coeff*atwo-betaLeft*aone+driveTwo)",
+    "a2i": "imag(coeff*atwo-betaLeft*aone+driveTwo)",
+    "carrier": "-carrier/tauCarrier+carrierCoeff*energyTotal**2",
+    "temp": "-temp/tauHeat+overlapHeat*powerAbs/(rhoSi*heatCapacity*volumeHeat)"
+  },
+  "observables": [
+    {
+      "name": "energy",
+      "expression": "energyTotal",
+      "unit": "J"
+    },
+    {
+      "name": "carrier",
+      "expression": "carrier",
+      "unit": "1/m**3"
+    },
+    {
+      "name": "temperature",
+      "expression": "temp",
+      "unit": "K"
+    },
+    {
+      "name": "transmission",
+      "expression": "abs2(1+1j*sqrt(couplingRate/powerIn)*atwo)",
+      "unit": "1"
+    }
+  ],
+  "condition_parameters": [
+    "powerIn",
+    "deltaLambda",
+    "phase12",
+    "phase21"
+  ],
+  "variant_id": "biasi-drum-formula-thermal-candidate"
+}

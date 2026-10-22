@@ -1,0 +1,17 @@
+# Executable analytic memory regression. NOT a Biasi or Xiang material model.
+# Each direction really integrates from its previous final state; no reversal of output arrays.
+pr_controls=[1;2;3;2;1];
+pr_gamma=2;
+pr_h=0.01;
+pr_dwell=0.2;
+pr_a=0;
+pr_final=matrix(length(pr_controls),1);
+for(pr_point=1:length(pr_controls)) {
+  pr_drive=pr_controls(pr_point);
+  for(pr_step=1:round(pr_dwell/pr_h)) {
+    pr_a=exp(-pr_gamma*pr_h)*pr_a+(1-exp(-pr_gamma*pr_h))/pr_gamma*pr_drive;
+  }
+  pr_final(pr_point)=pr_a;
+}
+matlabsave("analytic_history_scan.mat",pr_controls,pr_final);
+?"Analytic memory regression finished; not a paper reproduction";

@@ -1,0 +1,199 @@
+{
+  "identity": "289c980b46025d7012abae430f348f59a5ab402411b7fcbabc8c12912a72b389",
+  "points": [
+    {
+      "index": 0,
+      "parameter_value": 0,
+      "output": "/root/.codex/skills/remote-skills/lumerical-matlab-paper-reproduction/examples/biasi/phase-forward-run/point-00000/data.mat",
+      "sha256": "891232d8ca9cde6df2b4ab49c1b8f4ca1464b94c43c1982457fa0e202cb8d2f7",
+      "run_id": "f62a4cb9b4964438abbd2245f2e489c1",
+      "model_sha256": "3fd88b32733efe2010ec639238571972d0ebfc843149bba5dcd3eb617d9be4a3",
+      "input_state_sha256": "f374340b09f26f5f466e5100242a498e5a644885210171fa76c0ef0897132cbd",
+      "final_state": [
+        1.567206924712158e-07,
+        5.48704611754955e-08,
+        -2.1747670214511706e-07,
+        9.637878355173373e-08,
+        1.900515083072761e+22,
+        0.3343740977596295
+      ],
+      "features": {
+        "out_energy": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.0962049284295008e-16,
+          "early_amplitude": 8.404723325103231e-14,
+          "late_amplitude_ratio": 0.08320423229324701,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_carrier": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 5.262075997156121e+19,
+          "early_amplitude": 1.895239808769211e+22,
+          "late_amplitude_ratio": 0.08325253978440354,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_temperature": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 0.0017276023768523774,
+          "early_amplitude": 0.33264215917797946,
+          "late_amplitude_ratio": 0.08319427556701242,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_transmission": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 6.882298373001028e-05,
+          "early_amplitude": 0.14417739794313178,
+          "late_amplitude_ratio": 0.0831943123956833,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        }
+      },
+      "status": "COMPLETED"
+    },
+    {
+      "index": 1,
+      "parameter_value": 3.141592653589793,
+      "output": "/root/.codex/skills/remote-skills/lumerical-matlab-paper-reproduction/examples/biasi/phase-forward-run/point-00001/data.mat",
+      "sha256": "21da041361e2099ab5dd0513dfc625cd43dfd769b5c8a15ea4b8848a87219013",
+      "run_id": "b368fbc49fc84cb3b673a623bd6ad8d1",
+      "model_sha256": "01cd0d60a9ae7169873eb907ae44c19ffc2fc9e8beb099359b21bec44b50b8b9",
+      "input_state_sha256": "81b33529db7f9cefdb5457c6ca260d8dd7cb9a8f3bc1ddca4d44511da3fa474c",
+      "final_state": [
+        1.440736771840311e-07,
+        -6.764315883252544e-08,
+        -8.34628414112297e-08,
+        2.122094350762313e-07,
+        1.6047420990568146e+22,
+        0.2759381869634625
+      ],
+      "features": {
+        "out_energy": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 2.5131049210456222e-20,
+          "early_amplitude": 7.065524523452377e-15,
+          "late_amplitude_ratio": 0.004797352887164806,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_carrier": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.1956405856632832e+16,
+          "early_amplitude": 2.957717821359263e+21,
+          "late_amplitude_ratio": 0.004797343242973544,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_temperature": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.4497769868504484e-06,
+          "early_amplitude": 0.05843445345348697,
+          "late_amplitude_ratio": 0.004797310830308843,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_transmission": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.426625440004159e-07,
+          "early_amplitude": 0.2666341132759694,
+          "late_amplitude_ratio": 0.004797330916457054,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        }
+      },
+      "status": "COMPLETED"
+    },
+    {
+      "index": 2,
+      "parameter_value": 6.283185307179586,
+      "output": "/root/.codex/skills/remote-skills/lumerical-matlab-paper-reproduction/examples/biasi/phase-forward-run/point-00002/data.mat",
+      "sha256": "63b248529f7828e4516c6e8494e26faab87e6498ac5fc0425386044daabaa2b9",
+      "run_id": "b9b09cbdb5f64bfea74061e905eaae90",
+      "model_sha256": "829191c8839f9dc1399b5b4c5629de08726b43cf575d6aabe3e1f991aa63f4a5",
+      "input_state_sha256": "a49069076ff02333f11621742281305e4afb12e7a4d0233a0e53c2a19ff21c7b",
+      "final_state": [
+        1.567215764090859e-07,
+        5.4870325555746074e-08,
+        -2.1747731492444542e-07,
+        9.637913826346169e-08,
+        1.900543761460367e+22,
+        0.3343835065932528
+      ],
+      "features": {
+        "out_energy": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 2.4039571213431732e-17,
+          "early_amplitude": 6.8019144928178436e-15,
+          "late_amplitude_ratio": 0.08331409380219136,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_carrier": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.1544938032381559e+19,
+          "early_amplitude": 2.946442755792479e+21,
+          "late_amplitude_ratio": 0.08332469637219377,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_temperature": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 0.0003788241156130745,
+          "early_amplitude": 0.05806554608136916,
+          "late_amplitude_ratio": 0.08331191509696595,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        },
+        "out_transmission": {
+          "classification": "decaying_or_fixed",
+          "tail_amplitude": 1.509132776755795e-05,
+          "early_amplitude": 0.264897052603837,
+          "late_amplitude_ratio": 0.08331193463253296,
+          "tail_cycles": 0,
+          "period": null,
+          "period_cv": null,
+          "limit_cycle_proven": false,
+          "note": "A finite time trace alone cannot prove an attracting limit cycle; require longer run, convergence and phase-space checks"
+        }
+      },
+      "status": "COMPLETED"
+    }
+  ],
+  "status": "COMPLETED",
+  "current": 2
+}

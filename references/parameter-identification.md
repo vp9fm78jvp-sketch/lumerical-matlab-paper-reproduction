@@ -1,0 +1,15 @@
+# Physically constrained identification
+
+Use original data when public. Otherwise retain digitization calibration and error. Define the training figure/conditions, physically meaningful unknowns, plausible bounds, objective metrics, weights and held-out conditions before fitting. Do not tune known constants merely because that improves a single plot.
+
+`identify MODEL REFERENCE.csv --column out_NAME --out EXPERIMENT` runs a normalized bounded least-squares search over only `optimize:true`, category D parameters with bounds and rationale. The baseline model is immutable; trial 0 uses the baseline parameter values. Each attempted solver run has its own model/output/log and bounded deadline. Failed trials are recorded and cannot become “best”. Numerical failure penalties are optimizer bookkeeping, not simulated data. The selected candidate is a separate model file; its ledger explicitly states heldout_validated=false.
+
+The generic executable objective is waveform residual on the complete reference time interval without shifting/scaling the output. The agent must author a paper-specific objective when periodic phase is undefined, several observables matter, or spectral/map/bifurcation features are more appropriate. Do not claim that a single-curve least squares objective suffices for all figures. Extend the engine or run an explicit scientifically reviewed objective, retaining the same evidence contracts.
+
+Every total budget includes finite-difference trials. max_evaluations counts distinct solver evaluations, including failed ones; individual solver runs have their own deadline. A previous experiment directory cannot be overwritten. Use separate experiment IDs for revised bounds/objectives.
+
+The old Xiang workflow names fcdScale, sigmaScale, heatScale, qScale are retrospective effective factors. Their exact values are not available in this package. Prefer actual free-carrier lifetime, summed absorption cross-section, mode volume/overlap or external coupling parameters with physical interpretation. If a scale factor is unavoidable, state which dimensional parameter it changes, the equivalent value/units, basis and range. Do not allow several unidentified scales to compensate one another without identifiability analysis.
+
+Estimate local sensitivity and correlations, expand over multiple training conditions where possible, and report uncertain combinations rather than unjustified precise values. Preserve the original-parameter failure and distinguish original A, derived B, estimated C and identified D parameter categories from reproduction grades.
+
+For held-out evidence, use unchanged material parameters (`consistency.material_hash` excludes only declared condition parameters). Store training/validation condition IDs, real receipts/data hashes, predefined thresholds and actual comparison outcomes. Re-run the excluded figure; do not merely evaluate the training curve with different plot limits. A fitted or corrected model without independent validation cannot earn reproduction grade B under the bundled grader.

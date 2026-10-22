@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "example_only": true,
+  "paper_sha256": "synthetic-regression-no-paper",
+  "coverage_reviewed": false,
+  "figure_count": 1,
+  "panel_count": 1,
+  "tasks": [
+    {
+      "id": "Synthetic1",
+      "classification": {
+        "class": "A",
+        "provisional": true
+      },
+      "status": "PENDING",
+      "grade": "D",
+      "model_id": "linear-cavity-regression",
+      "dependencies": [],
+      "reason": "Synthetic contract example, never original research data"
+    }
+  ]
+}

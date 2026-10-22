@@ -1,0 +1,12 @@
+{
+  "parameter": "phase12",
+  "values": [
+    0.0,
+    1.5707963267948966,
+    3.141592653589793,
+    4.71238898038469,
+    6.283185307179586
+  ],
+  "reset_each": false,
+  "note": "Demonstration 5-point scan, not a publication-resolution map"
+}
